@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Discover, explore and download applications published by WABABE APPS.">
+<meta name="theme-color" content="#101a36">
+<title>WABABE APPS — Application Archive</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span class="brand-mark">W</span><span>WABABE <b>APPS</b><small>APPLICATION ARCHIVE</small></span></a><nav><a href="#apps">Explore apps</a><a href="#about">About</a><button class="btn btn-outline" id="adminOpen">Admin</button></nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">THE OFFICIAL APPLICATION ARCHIVE</span><h1>Your apps.<br><em>One trusted place.</em></h1><p>Discover useful applications created and published by WABABE Digital Center.</p><a class="btn btn-primary" href="#apps">Explore applications <span>→</span></a><div class="hero-note">DISCOVER <i>•</i> EXPLORE <i>•</i> DOWNLOAD</div></div><div class="hero-art"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="app-window"><div class="window-dots">● ● ●</div><div class="app-icon">W</div><div class="app-lines"><b>WABABE APPS</b><span>Application Archive</span><span class="fake-line"></span><span class="fake-line short"></span></div><div class="download-symbol">↓</div></div></div></section>
+<section class="catalog section" id="apps"><div class="section-heading"><div><span class="eyebrow">APPLICATION LIBRARY</span><h2>Explore our apps</h2><p>Find an application and view its details before downloading.</p></div><span class="count" id="appCount">Loading apps…</span></div><div class="search-row"><label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Search applications…"></label><select id="category"><option value="">All categories</option><option>Education</option><option>Islamic</option><option>Productivity</option><option>Tools</option><option>Other</option></select></div><div class="app-grid" id="appGrid"><div class="empty">Loading application archive…</div></div></section>
+<section class="about section" id="about"><span class="eyebrow">ABOUT THE ARCHIVE</span><h2>Built to make useful apps accessible.</h2><p>WABABE APPS is the official application archive of WABABE Digital Center. This platform is designed to make published applications easy to discover and download.</p><div class="about-foot"><span>WABABE DIGITAL CENTER</span><span>© <span id="year"></span> WABABE APPS</span></div></section>
+</main>
+<footer><a class="brand" href="/"><span class="brand-mark">W</span><span>WABABE <b>APPS</b><small>APPLICATION ARCHIVE</small></span></a><span>Discover • Explore • Download</span></footer>
+<div class="modal-backdrop" id="adminModal" hidden><section class="modal"><button class="modal-close" id="adminClose" aria-label="Close">×</button><span class="eyebrow">RESTRICTED AREA</span><h2>Administrator sign in</h2><p>Only the archive administrator can manage applications.</p><form id="loginForm"><label>Username<input name="username" autocomplete="username" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><button class="btn btn-primary" type="submit">Sign in</button><p class="form-message" id="loginMessage"></p></form></section></div>
+<script src="/app.js" defer></script>
+</body></html>
